@@ -17,6 +17,7 @@ import Volunteering from "@/pages/Volunteering.vue";
 import Yoko from "@/pages/projects/Yoko.vue";
 import Repo from "@/pages/Repo.vue";
 import Koda from "@/pages/projects/Koda.vue";
+import Haru from "@/pages/projects/Haru.vue";
 
 const metadata: IMetadata = {
   user: {
@@ -259,6 +260,29 @@ const metadata: IMetadata = {
         Tags: {
           icon: "code",
           value: ["TypeScript", "Vue.js", "Vue router"],
+        },
+      },
+    },
+    haru: {
+      id: "haru",
+      title: "Haru",
+      component: Haru,
+      parentPage: "projects",
+      path: "/haru",
+      banner: {
+        path: "/banners/haru.webp",
+      },
+      icon: {
+        path: "/icons/haru.svg",
+      },
+      databaseInfo: {
+        Created: {
+          icon: "clock",
+          value: "Jan 2026",
+        },
+        Tags: {
+          icon: "code",
+          value: ["JavaScript", "TypeScript"],
         },
       },
     },
