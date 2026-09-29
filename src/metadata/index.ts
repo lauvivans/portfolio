@@ -228,7 +228,7 @@ const metadata: IMetadata = {
         path: "/banners/yoko.webp",
       },
       icon: {
-        path: "/icons/yoko.png",
+        path: "/icons/yoko.svg",
       },
       databaseInfo: {
         Created: {
