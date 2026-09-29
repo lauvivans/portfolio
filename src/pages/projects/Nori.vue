@@ -5,5 +5,5 @@ import { LinkMention, Heading } from "@lauravivan/notion-portfolio";
 <template>
   <Heading :level="4">Where you can access</Heading>
 
-  <LinkMention href="https://haru.arualvivan.com" emoji="🐦‍⬛">Haru</LinkMention>
+  <LinkMention href="https://nori.arualvivan.com" emoji="🐈‍⬛">Nori</LinkMention>
 </template>

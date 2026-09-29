@@ -18,6 +18,7 @@ import Yoko from "@/pages/projects/Yoko.vue";
 import Repo from "@/pages/Repo.vue";
 import Koda from "@/pages/projects/Koda.vue";
 import Haru from "@/pages/projects/Haru.vue";
+import Nori from "@/pages/projects/Nori.vue";
 
 const metadata: IMetadata = {
   user: {
@@ -274,6 +275,29 @@ const metadata: IMetadata = {
       },
       icon: {
         path: "/icons/haru.svg",
+      },
+      databaseInfo: {
+        Created: {
+          icon: "clock",
+          value: "Jan 2026",
+        },
+        Tags: {
+          icon: "code",
+          value: ["JavaScript", "TypeScript"],
+        },
+      },
+    },
+    nori: {
+      id: "nori",
+      title: "Nori",
+      component: Nori,
+      parentPage: "projects",
+      path: "/nori",
+      banner: {
+        path: "/banners/nori.webp",
+      },
+      icon: {
+        path: "/icons/nori.svg",
       },
       databaseInfo: {
         Created: {
