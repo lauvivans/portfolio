@@ -52,6 +52,6 @@ import {
 <style scoped lang="css">
 .img-wrapper {
   flex: none;
-  max-width: 5%;
+  max-width: 1.5em;
 }
 </style>
