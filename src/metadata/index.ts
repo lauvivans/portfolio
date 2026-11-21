@@ -16,9 +16,7 @@ import Kami from "@/pages/projects/Kami.vue";
 import Volunteering from "@/pages/Volunteering.vue";
 import Yoko from "@/pages/projects/Yoko.vue";
 import Repo from "@/pages/Repo.vue";
-import Koda from "@/pages/projects/Koda.vue";
 import Haru from "@/pages/projects/Haru.vue";
-import Nori from "@/pages/projects/Nori.vue";
 
 const metadata: IMetadata = {
   user: {
@@ -241,29 +239,6 @@ const metadata: IMetadata = {
         },
       },
     },
-    koda: {
-      id: "koda",
-      title: "Koda",
-      component: Koda,
-      parentPage: "projects",
-      path: "/koda",
-      banner: {
-        path: "/banners/koda.webp",
-      },
-      icon: {
-        path: "/icons/koda.png",
-      },
-      databaseInfo: {
-        Created: {
-          icon: "clock",
-          value: "Aug 2026",
-        },
-        Tags: {
-          icon: "code",
-          value: ["TypeScript", "Vue.js", "Vue router"],
-        },
-      },
-    },
     haru: {
       id: "haru",
       title: "Haru",
@@ -275,29 +250,6 @@ const metadata: IMetadata = {
       },
       icon: {
         path: "/icons/haru.svg",
-      },
-      databaseInfo: {
-        Created: {
-          icon: "clock",
-          value: "Jan 2026",
-        },
-        Tags: {
-          icon: "code",
-          value: ["JavaScript", "TypeScript"],
-        },
-      },
-    },
-    nori: {
-      id: "nori",
-      title: "Nori",
-      component: Nori,
-      parentPage: "projects",
-      path: "/nori",
-      banner: {
-        path: "/banners/nori.webp",
-      },
-      icon: {
-        path: "/icons/nori.svg",
       },
       databaseInfo: {
         Created: {
