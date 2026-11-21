@@ -8,7 +8,7 @@ import {
   Empty,
   Columns,
   Column,
-} from "@lauravivan/notion-portfolio";
+} from "@lauvivans/kami";
 </script>
 
 <template>

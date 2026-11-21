@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Bookmark, Heading } from "@lauravivan/notion-portfolio";
+import { Bookmark, Heading } from "@lauvivans/kami";
 </script>
 
 <template>

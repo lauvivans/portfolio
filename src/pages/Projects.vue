@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Database, type PageInfo } from "@lauravivan/notion-portfolio";
+import { Database, type PageInfo } from "@lauvivans/kami";
 import metadata from "@/metadata";
 
 const pages = metadata.pages;

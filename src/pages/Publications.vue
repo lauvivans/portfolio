@@ -5,7 +5,7 @@ import {
   Text,
   LinkMention,
   Divider
-} from "@lauravivan/notion-portfolio";
+} from "@lauvivans/kami";
 </script>
 
 <template>

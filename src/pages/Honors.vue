@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Divider, Empty, Heading, Text, Image } from "@lauravivan/notion-portfolio";
+import { Divider, Empty, Heading, Text, Image } from "@lauvivans/kami";
 </script>
 
 <template>

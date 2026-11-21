@@ -7,7 +7,7 @@ import Courses from "@/pages/Courses.vue";
 import Events from "@/pages/Events.vue";
 import Homepage from "@/pages/About.vue";
 
-import { type IMetadata } from "@lauravivan/notion-portfolio";
+import { type IMetadata } from "@lauvivans/kami";
 import Honors from "@/pages/Honors.vue";
 import Publications from "@/pages/Publications.vue";
 import Projects from "@/pages/Projects.vue";

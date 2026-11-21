@@ -9,7 +9,7 @@ import {
   TextHighlight,
   Column,
   isTouchDevice,
-} from "@lauravivan/notion-portfolio";
+} from "@lauvivans/kami";
 import { onMounted, onUnmounted, ref, watch } from "vue";
 
 const isMobile = ref(false);
