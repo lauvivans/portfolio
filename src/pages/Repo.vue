@@ -2,12 +2,7 @@
 import { GH_REPO_URL } from "@/constants";
 import loadGhData from "@/loadGhData";
 import metadata from "@/metadata";
-import {
-  Empty,
-  Text,
-  TextHighlight,
-  useStore,
-} from "@lauvivans/kami";
+import { Empty, Text, TextHighlight, useStore } from "@lauvivans/kami";
 import { storeToRefs } from "pinia";
 import { onBeforeMount, ref, watch } from "vue";
 import { useRoute } from "vue-router";
@@ -47,7 +42,9 @@ const load = async () => {
         ...metadata.pages.repo,
         title: id,
       };
-    } catch {}
+    } catch {
+      // The GitHub API failed: keep the empty repo details.
+    }
   }
 };
 
@@ -60,7 +57,7 @@ watch(
   () => route.params.id,
   () => {
     load();
-  }
+  },
 );
 </script>
 

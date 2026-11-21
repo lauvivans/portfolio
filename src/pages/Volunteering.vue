@@ -43,7 +43,7 @@ const LINKEDIN_IFRAMES = [
   "https://www.linkedin.com/embed/feed/update/urn:li:share:7469481664696741888?collapsed=1",
   "https://www.linkedin.com/embed/feed/update/urn:li:share:7469485871076069376?collapsed=1",
   "https://www.linkedin.com/embed/feed/update/urn:li:share:7469494877915996160?collapsed=1",
-  "https://www.linkedin.com/embed/feed/update/urn:li:share:7474898306431758337?collapsed=1"
+  "https://www.linkedin.com/embed/feed/update/urn:li:share:7474898306431758337?collapsed=1",
 ];
 
 const getMorePosts = () => {
@@ -128,11 +128,11 @@ const getLessPosts = () => {
   <Heading :level="2">What I have been posting about 👀</Heading>
   <template v-if="isPageFullWidth">
     <Columns
-      :number-of-columns="2"
       v-for="index in Array.from({
         length: LINKEDIN_IFRAMES.length / 2,
       }).keys()"
       :key="index"
+      :number-of-columns="2"
     >
       <Column>
         <iframe
@@ -155,7 +155,7 @@ const getLessPosts = () => {
     </Columns>
   </template>
   <template v-else>
-    <div v-for="item in LINKEDIN_IFRAMES.slice(0, postsPerView)">
+    <div v-for="item in LINKEDIN_IFRAMES.slice(0, postsPerView)" :key="item">
       <iframe
         :src="item"
         :height="264"
@@ -166,14 +166,14 @@ const getLessPosts = () => {
       />
     </div>
     <button
-      v-on:click="getMorePosts()"
       v-if="postsPerView < LINKEDIN_IFRAMES.length"
+      @click="getMorePosts()"
     >
       Ver mais
     </button>
     <button
-      v-on:click="getLessPosts()"
       v-if="postsPerView === LINKEDIN_IFRAMES.length"
+      @click="getLessPosts()"
     >
       Ver menos
     </button>
