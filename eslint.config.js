@@ -20,6 +20,13 @@ export default defineConfig([
     files: ["src/pages/**/*.vue"],
     rules: { "vue/multi-word-component-names": "off" },
   },
+  {
+    // The artwork scripts run in Node.
+    files: ["design/**/*.mjs"],
+    languageOptions: {
+      globals: { process: "readonly", console: "readonly", Buffer: "readonly" },
+    },
+  },
   // Last, so it turns off the formatting rules that Prettier owns.
   prettier,
 ]);
