@@ -199,11 +199,16 @@ const metadata: IMetadata = {
       component: Kami,
       parentPage: "projects",
       path: "/kami",
+      // Mascot stickers by Paula Lee (Flaticon coffee shop pack), credited as the license asks
       banner: {
         path: "/banners/kami.webp",
+        author: "Paula Lee",
+        link: "https://www.flaticon.com/free-sticker/drink_7465398",
       },
       icon: {
         path: "/icons/kami.png",
+        author: "Paula Lee",
+        link: "https://www.flaticon.com/free-sticker/drink_7465398",
       },
       databaseInfo: {
         Created: {
