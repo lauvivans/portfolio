@@ -7,7 +7,7 @@ import { Divider, Empty, Heading, Text, Image } from "@lauvivans/kami";
 
   <Text>Programa Meninas Digitais</Text>
 
-  <Empty/>
+  <Empty />
 
   <Text
     >Award from the Digital Girls Program and the Brazilian Computer Society,
@@ -28,7 +28,7 @@ import { Divider, Empty, Heading, Text, Image } from "@lauvivans/kami";
 
   <Text>IFSC</Text>
 
-  <Empty/>
+  <Empty />
 
   <Text
     >The theme of the competition was Sentiment Analysis, and it lasted for two

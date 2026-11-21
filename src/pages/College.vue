@@ -182,7 +182,7 @@ import {
 
   <Text class="highlight">Mar 2022 - July 2022</Text>
 
-  <Empty/>
+  <Empty />
 
   <Text
     >The Vila Hortaliça project grew from a university-based social

@@ -1,11 +1,5 @@
 <script setup lang="ts">
-import {
-  Empty,
-  Heading,
-  Text,
-  LinkMention,
-  Divider
-} from "@lauvivans/kami";
+import { Empty, Heading, Text, LinkMention, Divider } from "@lauvivans/kami";
 </script>
 
 <template>
@@ -34,9 +28,9 @@ import {
     >Access publication</LinkMention
   >
 
-  <Empty/>
+  <Empty />
 
-  <Divider/>
+  <Divider />
 
   <Heading :level="3">
     Interdisciplinaridade na Ciência: Relato de Experiência sobre o Trabalho em

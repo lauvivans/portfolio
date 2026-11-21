@@ -11,7 +11,7 @@ import {
   NotFoundPage,
   useStore,
   piniaInstance,
-  type PageInfo
+  type PageInfo,
 } from "@lauvivans/kami";
 import App from "@/App.vue";
 import metadata from "@/metadata";
@@ -25,7 +25,7 @@ const mainChildren = Object.values(metadata.pages).map((page: PageInfo) => ({
   beforeEnter: (
     _to: RouteLocationNormalized,
     _from: RouteLocationNormalized,
-    next: NavigationGuardNext
+    next: NavigationGuardNext,
   ) => {
     const store = useStore;
     store.storeActivePage(page);
