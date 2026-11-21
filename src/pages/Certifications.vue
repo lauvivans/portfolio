@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Text } from "@lauravivan/notion-portfolio";
+import { Text } from "@lauvivans/kami";
 </script>
 
 <template>

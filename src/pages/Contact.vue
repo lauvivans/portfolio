@@ -6,7 +6,7 @@ import {
   Empty,
   Link,
   Image,
-} from "@lauravivan/notion-portfolio";
+} from "@lauvivans/kami";
 </script>
 
 <template>

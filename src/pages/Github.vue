@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { LinkMention, type PageInfo } from "@lauravivan/notion-portfolio";
+import { LinkMention, type PageInfo } from "@lauvivans/kami";
 import { onBeforeMount, ref, watch } from "vue";
 import loadGhData from "@/loadGhData";
 import { useRouter } from "vue-router";

@@ -9,9 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@lauravivan/notion-portfolio": "^1.1.6",
-    "pinia": "^3.0.4",
-    "vue": "^3.4.0",
+    "@lauvivans/kami": "^2.0.9",
+    "pinia": "^4.1.0",
+    "vue": "^3.5.46",
     "vue-router": "^4.6.3"
   },
   "devDependencies": {

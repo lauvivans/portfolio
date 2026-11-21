@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { LinkMention, Heading } from "@lauravivan/notion-portfolio";
+import { LinkMention, Heading } from "@lauvivans/kami";
 </script>
 
 <template>

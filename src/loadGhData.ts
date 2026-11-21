@@ -1,4 +1,4 @@
-import type { PageInfo } from "@lauravivan/notion-portfolio";
+import type { PageInfo } from "@lauvivans/kami";
 import { GH_REPOS_URL } from "./constants";
 import metadata from "./metadata";
 

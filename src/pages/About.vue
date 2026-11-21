@@ -9,7 +9,7 @@ import {
   Heading,
   LinkMention,
   Link,
-} from "@lauravivan/notion-portfolio";
+} from "@lauvivans/kami";
 </script>
 
 <template>

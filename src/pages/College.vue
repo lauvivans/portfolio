@@ -9,7 +9,7 @@ import {
   Callout,
   Image,
   Divider,
-} from "@lauravivan/notion-portfolio";
+} from "@lauvivans/kami";
 </script>
 
 <template>

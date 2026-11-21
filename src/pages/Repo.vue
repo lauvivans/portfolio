@@ -7,7 +7,7 @@ import {
   Text,
   TextHighlight,
   useStore,
-} from "@lauravivan/notion-portfolio";
+} from "@lauvivans/kami";
 import { storeToRefs } from "pinia";
 import { onBeforeMount, ref, watch } from "vue";
 import { useRoute } from "vue-router";

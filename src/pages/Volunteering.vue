@@ -13,7 +13,7 @@ import {
   Link,
   Image,
   useStore,
-} from "@lauravivan/notion-portfolio";
+} from "@lauvivans/kami";
 import { computed, ref } from "vue";
 
 const POSTS_PER_TIME = 5;

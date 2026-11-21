@@ -8,7 +8,7 @@ import {
   LinkMention,
   Callout,
   TextHighlight,
-} from "@lauravivan/notion-portfolio";
+} from "@lauvivans/kami";
 </script>
 
 <template>

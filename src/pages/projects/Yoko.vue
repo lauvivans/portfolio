@@ -5,7 +5,7 @@ import {
   Heading,
   BulletItem,
   BulletList,
-} from "@lauravivan/notion-portfolio";
+} from "@lauvivans/kami";
 </script>
 
 <template>
