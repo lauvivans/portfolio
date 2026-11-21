@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/notionportfolio",
+      "destination": "/kami",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",

@@ -12,7 +12,7 @@ import Honors from "@/pages/Honors.vue";
 import Publications from "@/pages/Publications.vue";
 import Projects from "@/pages/Projects.vue";
 import Github from "@/pages/Github.vue";
-import NotionPortfolio from "@/pages/projects/NotionPortfolio.vue";
+import Kami from "@/pages/projects/Kami.vue";
 import Volunteering from "@/pages/Volunteering.vue";
 import Yoko from "@/pages/projects/Yoko.vue";
 import Repo from "@/pages/Repo.vue";
@@ -170,7 +170,7 @@ const metadata: IMetadata = {
       },
       component: Projects,
       path: "/projects",
-      pages: ["notionportfolio", "yoko"],
+      pages: ["kami", "yoko"],
     },
     github: {
       id: "github",
@@ -195,17 +195,17 @@ const metadata: IMetadata = {
       path: `/github/:id`,
       parentPage: "github",
     },
-    notionportfolio: {
-      id: "notionportfolio",
-      title: "Notion Portfolio",
-      component: NotionPortfolio,
+    kami: {
+      id: "kami",
+      title: "Kami",
+      component: Kami,
       parentPage: "projects",
-      path: "/notionportfolio",
+      path: "/kami",
       banner: {
-        path: "/banners/notion-portfolio.webp",
+        path: "/banners/kami.webp",
       },
       icon: {
-        path: "/icons/notionportfolio.png",
+        path: "/icons/kami.png",
       },
       databaseInfo: {
         Created: {
