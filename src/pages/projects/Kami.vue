@@ -11,7 +11,7 @@ import {
 <template>
   <Heading :level="2">About</Heading>
   <Text
-    >A Notion-based customizable portfolio: with Notion Portfolio you will be
+    >A Notion-based customizable portfolio: with Kami you will be
     able to document all your academic and professional journey, building
     dynamic pages based on your needs</Text
   >
@@ -26,10 +26,10 @@ import {
     of its versatility and freedom of creation</Text
   >
 
-  <Heading :level="2">Notion Portfolio as a package</Heading>
+  <Heading :level="2">Kami as a package</Heading>
   <Text
     >In October of 2025 I've decided to transform the portfolio into a package,
-    so anyone could create their own Notion Portfolio. Also, I find the need of
+    so anyone could create their own Kami. Also, I find the need of
     separating personal information from the codebase</Text
   >
   <Text>This showed to be an interesting experience, where I learned more about the construction of packages, and a total different structure from traditional web projects that I was used to</Text>
@@ -39,7 +39,7 @@ import {
     <BulletItem> Developed a set of Notion components </BulletItem>
     <BulletItem>
       Created all the documentation needed to guide users in their first
-      experience with Notion Portfolio, helping them build their first page with
+      experience with Kami, helping them build their first page with
       no problems
     </BulletItem>
     <BulletItem>
@@ -59,7 +59,7 @@ import {
       available page
     </BulletItem>
     <BulletItem>
-      Developed global settings that allow users to change the Notion Portfolio
+      Developed global settings that allow users to change the Kami
       theme (Light, Dark, Cat Latte, and Cat Mocha)
     </BulletItem>
     <BulletItem>
@@ -76,13 +76,13 @@ import {
 
   <Heading :level="4">Demo</Heading>
 
-  <LinkMention href="https://notionportfolio.arualvivan.com" emoji="🍃"
-    >Notion Portfolio</LinkMention
+  <LinkMention href="https://kami.arualvivan.com" emoji="🍃"
+    >Kami</LinkMention
   >
 
   <Heading :level="4">Documentation</Heading>
   
-   <LinkMention href="http://notionportfolio-docs.arualvivan.com" emoji="🍃"
+   <LinkMention href="https://kami.arualvivan.com/client-docs" emoji="🍃"
     >Dev and client documentation</LinkMention
   >
 </template>
