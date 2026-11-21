@@ -33,7 +33,7 @@ watch(windowWidth, (newWidth) => {
 </script>
 
 <template>
-  <Columns :number-of-columns="2" :col1Size="20" :col2Size="80">
+  <Columns :number-of-columns="2" :col1-size="20" :col2-size="80">
     <Column v-if="!isMobile">
       <Image src="/ebac.png" />
     </Column>
@@ -77,7 +77,7 @@ watch(windowWidth, (newWidth) => {
 
   <Empty />
 
-  <Columns :number-of-columns="2" :col1Size="20" :col2Size="80">
+  <Columns :number-of-columns="2" :col1-size="20" :col2-size="80">
     <Column v-if="!isMobile">
       <Image src="/udemy.png" />
     </Column>
@@ -120,7 +120,7 @@ watch(windowWidth, (newWidth) => {
 
   <Empty />
 
-  <Columns :number-of-columns="2" :col1Size="20" :col2Size="80">
+  <Columns :number-of-columns="2" :col1-size="20" :col2-size="80">
     <Column v-if="!isMobile">
       <Image src="/curso-em-video.webp" />
     </Column>

@@ -38,8 +38,14 @@ import {
       Developed theme switching (Light and Dark) and layout switching (List and
       Grid)
     </BulletItem>
-    <BulletItem>Integrate the project with Zustand, to make it easier to control global state, as this application needs a lot of state management</BulletItem>
-    <BulletItem>Integrate the project with react router to switch between countdown page and actions page</BulletItem>
+    <BulletItem
+      >Integrate the project with Zustand, to make it easier to control global
+      state, as this application needs a lot of state management</BulletItem
+    >
+    <BulletItem
+      >Integrate the project with react router to switch between countdown page
+      and actions page</BulletItem
+    >
   </BulletList>
 
   <Heading :level="4">Where you can access</Heading>

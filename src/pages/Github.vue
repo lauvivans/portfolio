@@ -14,7 +14,7 @@ watch(
     if (newPath.includes("github")) {
       repos.value = await loadGhData();
     }
-  }
+  },
 );
 
 onBeforeMount(async () => {
@@ -25,9 +25,9 @@ onBeforeMount(async () => {
 <template>
   <template v-if="repos && repos.length > 0"
     ><LinkMention
-      :page="repo"
       v-for="repo in repos"
       :key="repo.title"
+      :page="repo"
       emoji="🐙"
   /></template>
 </template>

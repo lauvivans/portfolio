@@ -3,14 +3,16 @@ import { Database, type PageInfo } from "@lauvivans/kami";
 import metadata from "@/metadata";
 
 const pages = metadata.pages;
-const projects = Object.values(pages).filter((p: PageInfo) => p.parentPage && p.parentPage === 'projects');
+const projects = Object.values(pages).filter(
+  (p: PageInfo) => p.parentPage && p.parentPage === "projects",
+);
 </script>
 
 <template>
   <Database
     title="My projects"
     layout="gallery"
-    :cardPreviewIsCover="true"
+    :card-preview-is-cover="true"
     :pages="projects"
   />
 </template>

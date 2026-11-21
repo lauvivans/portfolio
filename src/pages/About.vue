@@ -47,13 +47,12 @@ import {
   </Text>
 
   <Text
-    >I&apos;m building
-    <Link href="https://kami.arualvivan.com/">Kami</Link>,
+    >I&apos;m building <Link href="https://kami.arualvivan.com/">Kami</Link>,
     <Link href="https://yoko.arualvivan.com/">Yoko!</Link>,
     <Link href="https://haru.arualvivan.com/">Haru</Link>,
     <Link href="https://nori.arualvivan.com/">Nori</Link> and
     <Link href="https://koda.arualvivan.com/">Koda</Link>
-    <LinkMention  :href="'/projects'" emoji="🎯">Go to my projects</LinkMention>
+    <LinkMention :href="'/projects'" emoji="🎯">Go to my projects</LinkMention>
   </Text>
 
   <Empty />

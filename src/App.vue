@@ -1,11 +1,5 @@
 <script setup lang="ts">
-import {
-  Aside,
-  Header,
-  useStore,
-  Tabs,
-  useAside,
-} from "@lauvivans/kami";
+import { Aside, Header, useStore, Tabs, useAside } from "@lauvivans/kami";
 import { useRouter } from "vue-router";
 import metadata from "@/metadata";
 
@@ -23,7 +17,7 @@ function handleNavigate(path: string) {
     <router-view v-slot="{ Component }">
       <component
         :is="Component"
-        :previousRoute="router.currentRoute.value.meta.previousRoute"
+        :previous-route="router.currentRoute.value.meta.previousRoute"
       />
     </router-view>
   </div>
@@ -39,8 +33,8 @@ function handleNavigate(path: string) {
         <router-view v-slot="{ Component }">
           <component
             :is="Component"
-            :activePage="store.getActivePage"
-            :useStore="useStore"
+            :active-page="store.getActivePage"
+            :use-store="useStore"
           />
         </router-view>
 
