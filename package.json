@@ -13,7 +13,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@lauvivans/kami": "^2.1.0",
+    "@lauvivans/kami": "^2.2.0",
     "pinia": "^4.1.0",
     "vue": "^3.5.46",
     "vue-router": "^4.6.3"
