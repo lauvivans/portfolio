@@ -45,6 +45,7 @@ Each run also saves previews in `design/out/` (ignored by Git): what the banner 
 ## Haru
 
 - Drawn by the game's own code: `src/pixel/*.ts` from the Haru repository runs in Node with a fake canvas (`haru/pixel-env.mjs`). The colors are the day palette from its `src/styles/tokens.css`, so the art always matches the game.
+- The script runs whatever code is in `HARU_REPO`, so point it only at a clone of the official repository that you trust, as you would before running `npm run dev` there.
 - The world is drawn at 5× (400×127 art pixels), with the camera at village x 1450. `npm run haru -- <x>` (or a scene name: `castle`, `tavern`, `market`, `square`) tries another spot.
 - The three looks stand on the ground: the knight idle, the villager cheering, the wizard winning.
 - Title "Haru" and "Save Haru from the gallows" (the game's landing copy) in Pixelify Sans, white with a dark outline and drop shadow, like the game's titles. Outline color: `--px-outline`.
