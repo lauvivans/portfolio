@@ -17,6 +17,7 @@ import Volunteering from "@/pages/Volunteering.vue";
 import Yoko from "@/pages/projects/Yoko.vue";
 import Repo from "@/pages/Repo.vue";
 import Haru from "@/pages/projects/Haru.vue";
+import Gaku from "@/pages/projects/Gaku.vue";
 
 const metadata: IMetadata = {
   user: {
@@ -168,7 +169,7 @@ const metadata: IMetadata = {
       },
       component: Projects,
       path: "/projects",
-      pages: ["kami", "yoko"],
+      pages: ["kami", "yoko", "gaku"],
     },
     github: {
       id: "github",
@@ -264,6 +265,34 @@ const metadata: IMetadata = {
         Tags: {
           icon: "code",
           value: ["JavaScript", "TypeScript"],
+        },
+      },
+    },
+    gaku: {
+      id: "gaku",
+      title: "Gaku",
+      component: Gaku,
+      parentPage: "projects",
+      path: "/gaku",
+      banner: {
+        path: "/banners/gaku.webp",
+      },
+      icon: {
+        path: "/icons/gaku.svg",
+      },
+      databaseInfo: {
+        Created: {
+          icon: "clock",
+          value: "Nov 2026",
+        },
+        Tags: {
+          icon: "code",
+          value: [
+            "TypeScript",
+            "React.js",
+            "React router",
+            "Cloudflare Workers",
+          ],
         },
       },
     },

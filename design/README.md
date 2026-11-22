@@ -2,11 +2,12 @@
 
 Sources and scripts for the project page artwork in `public/`. Each script writes its files straight into `public/`, and running it again reproduces the committed files exactly, so `git status` stays clean unless a source changed.
 
-| Output                                              | Script               | Sources                                                        |
-| --------------------------------------------------- | -------------------- | -------------------------------------------------------------- |
-| `public/banners/kami.webp`                          | `kami/make-kami.mjs` | `kami/mascot-mug.png`, `fonts/OpenSans.ttf`                    |
-| `public/banners/haru.webp`, `public/icons/haru.svg` | `haru/make-haru.mjs` | the Haru repository's pixel art code, `fonts/PixelifySans.ttf` |
-| `public/banners/yoko.webp`                          | `yoko/make-yoko.mjs` | `yoko/mascot.svg`, `fonts/Quicksand.ttf`                       |
+| Output                                              | Script               | Sources                                                         |
+| --------------------------------------------------- | -------------------- | --------------------------------------------------------------- |
+| `public/banners/kami.webp`                          | `kami/make-kami.mjs` | `kami/mascot-mug.png`, `fonts/OpenSans.ttf`                     |
+| `public/banners/haru.webp`, `public/icons/haru.svg` | `haru/make-haru.mjs` | the Haru repository's pixel art code, `fonts/PixelifySans.ttf`  |
+| `public/banners/yoko.webp`                          | `yoko/make-yoko.mjs` | `yoko/mascot.svg`, `fonts/Quicksand.ttf`                        |
+| `public/banners/gaku.webp`, `public/icons/gaku.svg` | `gaku/make-gaku.mjs` | the Gaku repository's prototype code, `fonts/JetBrainsMono.ttf` |
 
 The other images in `public/` are used as they are: `icons/kami.png` and `icons/yoko.svg` are the projects' mascots (see [Third-party elements](#third-party-elements)), and the other page banners and icons in `public/` were never part of the Canva design, so they are kept as they are.
 
@@ -20,6 +21,7 @@ npm install
 npm run kami
 HARU_REPO=/path/to/haru npm run haru   # a local clone of github.com/lauvivans/haru
 npm run yoko
+GAKU_REPO=/path/to/gaku npm run gaku   # a local clone of github.com/lauvivans/gaku
 ```
 
 `sharp` is pinned to an exact version: a new version can render text or encode WebP slightly differently, so after upgrading it, run every script and check the previews before committing the new files in `public/`.
@@ -58,6 +60,14 @@ Each run also saves previews in `design/out/` (ignored by Git): what the banner 
 - Yoko's light theme tokens: background `--bg-surface` `#e4e6e7`, text `--text-color-default` `#262626`, highlight `--blue` `#b5e0ff`. Quicksand Bold.
 - `yoko/mascot.svg` is a copy of `client/public/mascot.svg` from the Yoko repository.
 
+## Gaku
+
+- Drawn by the prototype's own code in the Gaku repository (`docs/prototypes/platform`): `src/mascot.ts` gives the SVG of the character and her ghost, and the script redraws the inked shapes with rough.js using the seeds and options of `src/sketch.ts`, so the line matches the prototype. The styles come from `mascot.css` and the light theme of `tokens.css`, and the "ink" and "sketch" filters are copied from `sketch.ts`.
+- As with Haru, the script runs the code in `GAKU_REPO`, so point it only at a clone you trust.
+- Default mode: responsible, with the sky ghost. `npm run gaku -- <mode>` draws another one (`tired`, `anxious`, `procrastinating`, `proud`, `focused`, `chaotic`).
+- Background `--paper` with the page's dot grid. Title "Gaku" and "A personal study platform" (from the repository's README) in JetBrains Mono, the app's font.
+- Icon: the character without the dotted frame, which follows the page theme in the app.
+
 ## Third-party elements
 
 | Element                                   | Used in                                                      | Origin                                                                                                     | License                                                                                        |
@@ -68,3 +78,6 @@ Each run also saves previews in `design/out/` (ignored by Git): what the banner 
 | Mascot hugging the mug, mascot with bread | Kami banner (`kami/mascot-mug.png`), `public/icons/kami.png` | Stickers by Paula Lee, coffee shop pack on [Flaticon](https://www.flaticon.com/free-sticker/drink_7465398) | Flaticon license; credited on the Kami page through the banner and icon `author`/`link` fields |
 | Octopus mascot                            | Yoko banner (`yoko/mascot.svg`), `public/icons/yoko.svg`     | [Noto Emoji](https://github.com/googlefonts/noto-emoji) by Google, as modified for Yoko                    | Apache License 2.0                                                                             |
 | Haru sprites and world                    | Haru banner and icon                                         | Drawn in code in the Haru repository                                                                       | MIT (Haru repository)                                                                          |
+| JetBrains Mono                            | Gaku banner                                                  | [Google Fonts](https://github.com/google/fonts/tree/main/ofl/jetbrainsmono)                                | SIL Open Font License 1.1, `fonts/OFL-jetbrainsmono.txt`                                       |
+| Gaku character and ghosts                 | Gaku banner and icon                                         | Drawn in code in the Gaku repository                                                                       | Same author as this site; the Gaku repository has no license file yet                          |
+| rough.js                                  | Gaku banner and icon (`roughjs` package)                     | [rough-stuff/rough](https://github.com/rough-stuff/rough)                                                  | MIT                                                                                            |
