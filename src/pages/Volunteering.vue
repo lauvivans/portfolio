@@ -12,13 +12,10 @@ import {
   Column,
   Link,
   Image,
+  ShowMore,
   useStore,
 } from "@lauvivans/kami";
-import { computed, ref } from "vue";
-
-const POSTS_PER_TIME = 5;
-
-const postsPerView = ref(POSTS_PER_TIME);
+import { computed } from "vue";
 
 const store = useStore;
 
@@ -45,27 +42,6 @@ const LINKEDIN_IFRAMES = [
   "https://www.linkedin.com/embed/feed/update/urn:li:share:7469494877915996160?collapsed=1",
   "https://www.linkedin.com/embed/feed/update/urn:li:share:7474898306431758337?collapsed=1",
 ];
-
-const getMorePosts = () => {
-  const toAdd = postsPerView.value + POSTS_PER_TIME;
-
-  if (toAdd < LINKEDIN_IFRAMES.length) {
-    postsPerView.value += POSTS_PER_TIME;
-  } else {
-    const restToAdd = LINKEDIN_IFRAMES.length - postsPerView.value;
-    postsPerView.value += restToAdd;
-  }
-};
-
-const getLessPosts = () => {
-  const toSub = postsPerView.value - POSTS_PER_TIME;
-
-  if (toSub < POSTS_PER_TIME) {
-    postsPerView.value = POSTS_PER_TIME;
-  } else {
-    postsPerView.value -= POSTS_PER_TIME;
-  }
-};
 </script>
 
 <template>
@@ -154,30 +130,18 @@ const getLessPosts = () => {
       </Column>
     </Columns>
   </template>
-  <template v-else>
-    <div v-for="item in LINKEDIN_IFRAMES.slice(0, postsPerView)" :key="item">
-      <iframe
-        :src="item"
-        :height="264"
-        width="100%"
-        frameborder="0"
-        allowfullscreen="false"
-        title="Embedded post"
-      />
-    </div>
-    <button
-      v-if="postsPerView < LINKEDIN_IFRAMES.length"
-      @click="getMorePosts()"
-    >
-      Ver mais
-    </button>
-    <button
-      v-if="postsPerView === LINKEDIN_IFRAMES.length"
-      @click="getLessPosts()"
-    >
-      Ver menos
-    </button>
-  </template>
+  <ShowMore v-else :limit="5" label="Ver mais" less-label="Ver menos">
+    <iframe
+      v-for="item in LINKEDIN_IFRAMES"
+      :key="item"
+      :src="item"
+      :height="264"
+      width="100%"
+      frameborder="0"
+      allowfullscreen="false"
+      title="Embedded post"
+    />
+  </ShowMore>
 
   <Text>Outros:</Text>
   <BulletList>
