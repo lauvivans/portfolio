@@ -1,14 +1,16 @@
 {
   "name": "portfolio-design",
   "private": true,
-  "description": "Generates the project banners and the Haru icon in public/",
+  "description": "Generates the project banners and the Haru and Gaku icons in public/",
   "type": "module",
   "scripts": {
     "kami": "node kami/make-kami.mjs",
     "haru": "node haru/make-haru.mjs",
-    "yoko": "node yoko/make-yoko.mjs"
+    "yoko": "node yoko/make-yoko.mjs",
+    "gaku": "node gaku/make-gaku.mjs"
   },
   "dependencies": {
+    "roughjs": "4.6.6",
     "sharp": "0.35.5"
   }
 }
