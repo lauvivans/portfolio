@@ -169,7 +169,7 @@ const metadata: IMetadata = {
       },
       component: Projects,
       path: "/projects",
-      pages: ["kami", "yoko", "gaku"],
+      pages: ["kami", "yoko", "haru", "gaku"],
     },
     github: {
       id: "github",
