@@ -116,7 +116,7 @@ const ghostSvg = `<g filter="url(#sketch)"><svg x="${-42 * k}" y="${-6 * k}" wid
 
 // Banner figure: girl, frame and ghost. Icon: the girl alone, without the frame, which follows the page theme.
 const svgDoc = (viewBox, width, height, body) =>
-  `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="${viewBox}" class="mascot">${style}${filters}${body}</svg>`;
+  `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="${viewBox}">${style}${filters}${body}</svg>`;
 
 const ICON = 200;
 const icon = svgDoc(
