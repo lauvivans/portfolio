@@ -11,11 +11,9 @@ import { type IMetadata } from "@lauvivans/kami";
 import Honors from "@/pages/Honors.vue";
 import Publications from "@/pages/Publications.vue";
 import Projects from "@/pages/Projects.vue";
-import Github from "@/pages/Github.vue";
 import Kami from "@/pages/projects/Kami.vue";
 import Volunteering from "@/pages/Volunteering.vue";
 import Yoko from "@/pages/projects/Yoko.vue";
-import Repo from "@/pages/Repo.vue";
 import Haru from "@/pages/projects/Haru.vue";
 import Gaku from "@/pages/projects/Gaku.vue";
 
@@ -170,29 +168,6 @@ const metadata: IMetadata = {
       component: Projects,
       path: "/projects",
       pages: ["kami", "yoko", "haru", "gaku"],
-    },
-    github: {
-      id: "github",
-      title: "My GitHub repos",
-      banner: {
-        path: "/banners/github.webp",
-      },
-      icon: {
-        path: "/icons/github.png",
-      },
-      component: Github,
-      path: "/github",
-      pages: [],
-    },
-    repo: {
-      id: "repo",
-      title: "Repo",
-      icon: {
-        path: "/icons/github.png",
-      },
-      component: Repo,
-      path: `/github/:id`,
-      parentPage: "github",
     },
     kami: {
       id: "kami",
